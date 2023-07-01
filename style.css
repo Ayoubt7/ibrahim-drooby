@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url('https://www.fontstatic.com/f=thuluth-decorated');
+
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'Almarai', sans-serif; 
+}
+
+section.container {
+  display: flex;
+  flex-direction: row-reverse;
+  scroll-snap-align: start;
+  scroll-snap-type: y mandatory; /* Add scroll-snap-type property */
+  overflow-y: scroll; /* Add overflow-y property */
+}
+
+.first-text {
+  flex: 1;
+  text-align: right;
+  color: white;
+  margin-top: 100px;
+  margin-right: 100px;
+  font-size: 50px;
+  font-family:'thuluth-decorated';
+}
+
+.who {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-style: groove;
+  border-color: white;
+  height: 50px;
+  width: 120px;
+  font-family:'thuluth-decorated';
+  cursor: pointer;
+  margin-right: 53px;
+  transition: opacity 1s;
+  transition: background-color 1s, color 1s;
+  font-size: 20px;
+}
+
+.who:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.who:active {
+  opacity: 1s;
+}
+
+.songs {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-style:groove;
+  border-color: white;
+  height: 50px;
+  width: 120px;
+  font-family:'thuluth-decorated';
+  cursor: pointer;
+  margin-right: 10px;
+  transition: opacity 0.2s;
+  font-size: 20px;
+  transition: background-color 1s, color 1s;
+}
+
+.songs:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.songs:active {
+  opacity: 1s;
+}
+
+.random {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-style:groove;
+  border-color: white;
+  height: 50px;
+  width: 120px;
+  font-family:'thuluth-decorated';
+  cursor: pointer;
+  margin-right: 10px;
+  transition: opacity 0.2s;
+  font-size: 20px;
+  transition: background-color 1s, color 1s;
+}
+
+.random:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.random:active {
+  opacity: 1s;
+}
+
+section.container .image-container {
+  width: 35%; 
+  height: 100vh;
+  background-image: url('images/2nnn.png'); 
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+section.container .text-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+section.container .text-container h1 {
+  font-family: 'Thuluth Decorated', sans-serif;
+  font-size: 36px;
+  color: white;
+}
+
+section.container .image-container:hover {
+  background-image: url('images/Runway\ 2023-06-30T23_31_55.709Z\ Upscale\ Image\ Upscaled\ Image\ 1920\ x\ 2624\ \(1\).png'); /* Update the hover image URL */
+  cursor: pointer; 
+}
+
+section.container .image-container img {
+  display: none;
+}
+
+.p2 {
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  scroll-snap-align: start;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.p22 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.third {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  scroll-snap-align: start;
+  margin: 0;
+  scroll-snap-align: start;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.enwan {
+  text-align: center;
+  align-content: center;
+  align-self: center; /* Center the text horizontally */
+  font-family: Almarai;
+  font-size: 35px;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 8px;
+}
+
+.first-vedio,
+.second-vedio,
+.third-vedio,
+.eighth-vedio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.forth-vedio,
+.fifth-vedio,
+.sixth-vedio, 
+.seventh-vedio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.first-vedio img,
+.second-vedio img,
+.third-vedio img,
+.forth-vedio img,
+.fifth-vedio img,
+.sixth-vedio img,
+.seventh-vedio img,
+.eighth-vedio img{
+  width: 260px;
+  height: 150px;
+  transition: transform 0.3s ease;
+}
+
+.first-vedio p,
+.second-vedio p,
+.third-vedio p,
+.forth-vedio p,
+.fifth-vedio p,
+.sixth-vedio p,
+.seventh-vedio p,
+.eighth-vedio p {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.first-vedio img:hover {
+  transform: scale(1.1);
+  content: url('images/1n.jpg');
+}
+
+.second-vedio img:hover {
+  transform: scale(1.1);
+  content: url('images/2n.jpg');
+}
+
+.third-vedio img:hover {
+  transform: scale(1.1);
+  content: url('images/3n.jpg');
+}
+
+.forth-vedio img:hover {
+  transform: scale(1.1);
+  content: url('images/4n.jpg');
+}
+
+.fifth-vedio img:hover {
+  transform: scale(1.1);
+  content: url('images/5n.png');
+}
+
+.sixth-vedio img:hover {
+  transform: scale(1.1);
+  content: url('images/6n.png');
+}
+
+.seventh-vedio img:hover {
+  transform: scale(1.1);
+  content: url('images/7n.jpg');
+}
+
+.eighth-vedio img:hover {
+  transform: scale(1.1);
+  content: url('images/8n.jpg');
+}
+
+.final {
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  scroll-snap-align: start;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+/* Added the following CSS to enable snap scrolling */
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section.container {
+  scroll-snap-align: start;
+}
+
+section.container .image-container {
+  scroll-snap-align: start;
+}
+
+.p2 {
+  scroll-snap-align: start;
+}
+
+.third {
+  scroll-snap-align: start;
+}
+
+.final {
+  scroll-snap-align: start;
+}
+
